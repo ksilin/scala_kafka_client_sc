@@ -1,0 +1,10 @@
+{
+  "schemaType": "PROTOBUF",
+  "schema": "syntax = \"proto3\";\npackage com.example;\n\nmessage PersonalData {\n  string id = 1;\n  string name = 2;\n  string birthday = 3;\n}",
+  "metadata": {
+    "properties": {
+      "owner": "Konstantin Silin",
+      "email": "konstantin.silin@confluent.io"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "ruleSet": {
+    "domainRules": [
+      {
+        "name": "encryptPII_SC",
+        "kind": "TRANSFORM",
+        "type": "ENCRYPT",
+        "mode": "WRITEREAD",
+        "tags": ["PII"],
+        "params": {
+          "encrypt.kek.name": "ksi_csfle_aws",
+          "encrypt.kms.key.id": "arn:aws:kms:eu-central-1:492737776546:key/mrk-1888c71ef12945faaea44588c092c60f",
+          "encrypt.kms.type": "aws-kms"
+        },
+        "onFailure": "ERROR,NONE"
+      }
+    ]
+  }
+}

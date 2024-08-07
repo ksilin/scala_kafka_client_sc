@@ -1,0 +1,8 @@
+syntax = "proto3";
+package com.example;
+
+message PersonalData {
+  string id = 1;
+  string name = 2;
+  string birthday = 3;
+}
